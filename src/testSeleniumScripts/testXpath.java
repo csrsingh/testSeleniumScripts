@@ -10,6 +10,7 @@ public class testXpath {
 	public static void main(String[] args) {
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http://register.rediff.com/register/register.php?FormName=user_details");
+		
 		driver.findElement(By.xpath("//*[@id=\"tblcrtac\"]/tbody/tr[3]/td[3]/input")).sendKeys("Chandrashekhar Singh");
 		driver.findElement(By.xpath("/html/body/center/form/div/table[2]/tbody/tr[7]/td[3]/input[1]")).sendKeys("test");
 		driver.findElement(By.xpath("//*[@id=\"newpasswd\"]")).sendKeys("Shekhar@486");

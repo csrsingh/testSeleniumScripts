@@ -31,8 +31,9 @@ public class testMouseMove {
 			Thread.sleep(5000);
 			driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/div[3]/a/span")).click();
 			driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/div[3]/button")).click();
-			Actions action1 = new Actions(driver);
 			action.moveToElement(driver.findElement(By.xpath("/html/body/div[1]/div/div[2]/div[2]/div/div[2]/form/div[1]/div[1]/div/div/input"))).build().perform();
-			driver.findElement(By.xpath("/html/body/div[1]/div/div[2]/div[2]/div/div[2]/form/div[1]/div[1]/div/div/input")).sendKeys("Chandrashehar");
+			
+			//driver.findElement(By.xpath("//input[@name='first_name']")).sendKeys("Chandrashehar");
+			driver.findElement(By.xpath("//input[contains(@name,'first_name')]")).sendKeys("Chandrashehar");
 		}
 	}
