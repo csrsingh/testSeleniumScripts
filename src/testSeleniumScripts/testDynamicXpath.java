@@ -31,6 +31,7 @@ public class testDynamicXpath {
 
 		//driver.findElement(By.xpath("//input[starts-with(@class,'inputtext _')]")).sendKeys("sechandrashekharsingh");
 		driver.findElement(By.xpath("//input[contains(@name,'pass')]")).sendKeys("sechandrashekharsingh");
+		driver.findElement(By.xpath("//a[contains(text(),'Bulletin')]")).click();
 
 	}
 
